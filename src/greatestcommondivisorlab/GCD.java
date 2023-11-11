@@ -19,8 +19,8 @@ public class GCD
 	}
 	
 	//modifier method for numerator
-	public void setNumerator(int num) {
-		numerator = num;
+	public void setNumerator(int num1) {
+		numerator = num1;
 	}
 	
 	//modifier method for denominator
