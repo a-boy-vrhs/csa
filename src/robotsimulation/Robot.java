@@ -51,17 +51,19 @@ public class Robot
 	   int total = 0;
 	   String info = "";
 	   int nextMove = 0;
-	   
+	   int moves = 0;
 	   if(printInfo) {
-		   for(int i=0; i<maxMoves; i++) {
+		   while(total < goalDistance && total >= 0 && moves < maxMoves) {
 			   nextMove = moveDistance();
 			   info += total+"("+nextMove+")";
 			   total += nextMove;
+			   moves++;
 		   }
 	   }else {
-		   for(int i=0; i<maxMoves; i++) {
+		   while(total < goalDistance && total >= 0 && moves < maxMoves) {
 			   nextMove = moveDistance();
 			   total += nextMove;
+			   moves++;
 		   }
 	   }
 	   System.out.println(info);
